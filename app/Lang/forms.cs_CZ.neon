@@ -1,0 +1,7 @@
+test: 'Překlad'
+name: 'Jméno'
+surname: 'Příjmení'
+name_desc: 'Popisek, var1 = %var1%, var2 = %var2%'
+surname_desc: 'Popisek...'
+field_required: 'Vyžadováno'
+save: 'Uložit'

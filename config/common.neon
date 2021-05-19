@@ -2,22 +2,35 @@ parameters:
 
 
 application:
-	errorPresenter: Error
-	mapping:
-		*: App\*Module\Presenters\*Presenter
+    errorPresenter: Error
+    mapping:
+        *: App\*Module\Presenters\*Presenter
 
 
 session:
-	expiration: 14 days
+    expiration: 14 days
 
 
 di:
-	export:
-		parameters: no
-		tags: no
+    export:
+        parameters: no
+        tags: no
 
 
 services:
-	- App\Router\RouterFactory::createRouter
-	- App\Model\TestRepository
-	- App\Components\TestGrid\ITestGridFactory
+    - App\Router\RouterFactory::createRouter
+    - App\Model\TestRepository
+    - App\Components\TestGrid\ITestGridFactory
+
+
+extensions:
+    translation: Contributte\Translation\DI\TranslationExtension
+
+
+translation:
+    locales:
+        whitelist: [cs, en]
+        default: cs
+        fallback: [cs]
+    dirs:
+        - %appDir%/Lang

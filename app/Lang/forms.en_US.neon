@@ -1,0 +1,7 @@
+test: 'Translation'
+name: 'Name'
+surname: 'Surname'
+name_desc: 'Description, var1 = %var1%, var2 = %var2%'
+surname_desc: 'Description...'
+field_required: 'Required'
+save: 'Save'
